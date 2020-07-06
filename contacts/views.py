@@ -29,13 +29,13 @@ def contact(request):
 
     # Send mail
 
-    send_mail(
-        'Property Listing Inquiry',
-        'There has been an inquiry for ' + listing + '. Sign into the admin panel for more info.',
-        'tad@pilitconsulting.com',
-        [realtor_email, 'tad@pilitconsulting.com'],
-        fail_silently=False
-    )
+    #send_mail(
+    #    'Property Listing Inquiry',
+    #    'There has been an inquiry for ' + listing + '. Sign into the admin panel for more info.',
+    #    'tad@pilitconsulting.com',
+    #    [realtor_email, 'tad@pilitconsulting.com'],
+    #    fail_silently=False
+    #)
 
     messages.success(request,'Your request has been submitted, a realtor will bet back to you soon')
 
